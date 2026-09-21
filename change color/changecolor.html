@@ -8,16 +8,6 @@
 
 <body>
 
-            let value = "#";
-
-            for (let i = 0; i < 6; i++) {
-
-                const randomIndex =
-                    Math.floor(Math.random() * colors.length);
-
-                value += colors[randomIndex];
-            }
-
             body.style.background = value;
 
             text.textContent = value;
