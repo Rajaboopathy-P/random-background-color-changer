@@ -92,19 +92,37 @@
                 width: 100%;
             }
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: white;
+        }
+        .footer a {
+            color: #888;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="card">
+    <div class="container">
+        <div class="card">
+            <h1>Click to change color</h1>
+            <button type="button" onclick="changeColor()">
+            Change Color</button>
 
-        <h1>Click to change color</h1>
+        </div>
+        <p class="footer">Made with ❤️ by <a href="#" target="_blank">Boopa</a>
 
-        <button type="button" onclick="changeColor()">
-            Change Color
-        </button>
-
+        </p>
     </div>
 
     <script>
